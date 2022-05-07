@@ -13,5 +13,5 @@ jobs:
       run: |
        echo "${{ secrets.DOCKERPASS }}" | docker login -u "${{ secrets.DOCKERUSER }}" --password-stdin
        docker build -t ttld .
-       docker tag ttld:latest hsjsa/anastytest:latest
-       docker push hsjsa/anastytest:latest
+       docker tag ttld:latest t4taz/tazmirrorbot:latest
+       docker push t4taz/tazmirrorbot:latest
